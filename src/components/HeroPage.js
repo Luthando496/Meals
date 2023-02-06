@@ -14,7 +14,7 @@ const HeroPage =()=>{
 <nav className="navbar container w-full flex items-center justify-between">
     <ul className="lists text-2xl mx-auto w-10/12 font-mono text-white py-4 flex items-center justify-between">
         <li className="list ">
-            <Link className="item" to="/about">About Us</Link>
+            <a className="item" href="#about">About Us</a>
         </li>
         <li className="list">
             <Link className="item" to="/gallery">Gallery</Link>
@@ -23,7 +23,7 @@ const HeroPage =()=>{
             <Link className="item" to="/food">Food</Link>
         </li>
         <li className="list">
-            <Link className="item" to='/'>Reservation</Link>
+            <a className="item" href='#reservation'>Reservation</a>
         </li>
     </ul>
 </nav>
@@ -64,7 +64,7 @@ const HeroPage =()=>{
 
 </section>
 
-<section className="reservations">
+<section className="reservations" id="reservation">
 <div className="res-container">
     <div className="res-item">
         <img src="img/pexels-vidal-balielo-jr-2337800.jpg" alt="pexels-vidal-balielo-jr-2337800.jpg" />
