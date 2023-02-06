@@ -15,7 +15,6 @@ const Food = () => {
 
     useEffect(()=>{
         dispatch(fetchProducts())
-        document.title = 'Food Search'
 
     },[dispatch])
 
