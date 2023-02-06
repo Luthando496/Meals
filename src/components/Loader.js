@@ -1,8 +1,8 @@
-import { useState, CSSProperties } from "react";
+import { useState } from "react";
 import HashLoader from "react-spinners/HashLoader";
 
 const Loader = () => {
-    const override = CSSProperties = {
+    const override = {
         display: "block",
         margin: "20px auto",
         borderColor: "red",
