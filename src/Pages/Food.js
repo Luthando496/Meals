@@ -15,6 +15,7 @@ const Food = () => {
 
     useEffect(()=>{
         dispatch(fetchProducts())
+        document.title = 'Food Search'
 
     },[dispatch])
 
@@ -45,7 +46,7 @@ const Food = () => {
     {loading && <Loader />}
 
     {err && <div className="error"><h1>Sorry something wrong happened</h1><h2>Try refreshing and check your internet connection</h2></div>}
-    {products === null  && <div className="error"><h1>NO COCKTAILS FOUND WITH {search}</h1></div> }
+    {products && products.meals === null  && <div className="error"><h1>NO FOOD FOUND WITH THAT NAME. TRY A SINGLE LETTER OR ANOTHER WORD</h1></div> }
     <div className="cocktails">
         <div className="container">
         {products && products.meals && products.meals.map((drink)=>{

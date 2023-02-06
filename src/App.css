@@ -877,3 +877,30 @@ ul{
 .loader{
     color: #07fc07;
 }
+
+
+.error{
+    background: #af6868;
+    height: 70vh;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    line-height:1.4;
+    /* text-spacing:2px; */
+}
+
+.error h1{
+    font-size: 4rem;
+    font-family: 'Roboto';
+    font-style: italic;
+    color: lavenderblush;
+}
+
+.error h2{
+    font-size: 3.5rem;
+    font-family: 'Roboto';
+    font-style: italic;
+    color: lavenderblush;
+}
