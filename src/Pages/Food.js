@@ -32,10 +32,10 @@ const Food = () => {
             <form className="form" onSubmit={Submit}>
                 <div className="content">
                 <div className="title">
-                    <h2>Search Your Favorite Cocktail</h2>
+                    <h2>Search Your Favorite Food</h2>
                 </div>
                 <div className="input-control">
-                    <input type="text" placeholder='Search for cocktails' onChange={e=> setSearch(e.target.value)} />
+                    <input type="text" placeholder='Search for meals' onChange={e=> setSearch(e.target.value)} />
                     <button type="submit">Search</button>
                 </div>
                 </div>
